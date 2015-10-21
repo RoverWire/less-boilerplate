@@ -1,0 +1,90 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background-color: @body-bg;
+  font-family: @font-family;
+  font-size: @font-size-base;
+  line-height: @line-height-base;
+  color: @font-color;
+}
+
+.wrapp {
+  min-height: 100%;
+  margin: 0 0 -@footer-height 0;
+  .clearfix();
+
+  &:after {
+    content: '';
+    display: block;
+    height: @footer-height;
+  }
+}
+
+.container {
+  .container-fixed();
+  @media (min-width: @screen-sm-min) {
+    width: @container-sm;
+  }
+  @media (min-width: @screen-md-min) {
+    width: @container-md;
+  }
+  @media (min-width: @screen-lg-min) {
+    width: @container-lg;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: @headings-font-family;
+  font-weight: @headings-font-weight;
+  line-height: @headings-line-height;
+}
+
+h1 {
+  font-size: @font-size-h1;
+  font-family: 'GazetteLTStd-Roman';
+}
+
+h2 {
+  font-size: @font-size-h2;
+}
+
+h3 {
+  font-size: @font-size-h3;
+}
+
+h4 {
+  font-size: @font-size-h4;
+}
+
+p {
+  margin: 1em 0;
+}
+
+#title {
+  margin: 0.67em auto;
+  width: 1050px;
+  position: relative;
+  z-index: 99;
+}
+
+.clearfix {
+  .clearfix();
+}
+
+.row {
+  .row();
+}
+
+.wrap-center {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+
+  @media screen and (min-width: @screen-md){
+    width: 64%;
+  }
+}

@@ -1,0 +1,35 @@
+.blog {
+  background: url('../img/contact.jpg') no-repeat center center fixed;
+  background-size: cover;
+
+  .blog-list {
+  	margin-top: 120px;
+    overflow: hidden;
+
+    .blog-card {
+      .column(8);
+      .push(2);
+      margin-bottom: 48px;
+    }
+  }
+
+  .post {
+    margin-top: 120px;
+    overflow: hidden;
+
+    .card-header {
+      min-height: 400px;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      color: @color-medium-purple;
+    }
+
+    .card-text {
+      @media (min-width: @screen-md-min) {
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+    }
+  }
+}

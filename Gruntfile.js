@@ -5,7 +5,8 @@ module.exports = function(grunt) {
         options: {
           compress: true,
           yuicompress: true,
-          optimization: 2
+          optimization: 2,
+          plugins: [ require('less-plugin-glob') ]
         },
         files: {
           // target.css file: source.less file
